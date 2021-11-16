@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <h1>VÍDEO</h1>
+    <video width="400" height="300"
+        controls
+        autoplay
+        loop
+        muted
+        preload="auto"
+        poster=""
+        >
+        <source src="archivos/Seoul - 21985.ogx"/>
+        <source src="archivos/Seoul - 21985.mp4"/>
+        <p>Navegador no soporta formato</p>
+    </video>
+
+    <h1>AUDIO</h1>
+    <audio controls autoplay loop preload="auto">
+        <source src="archivos/modular-ambient-01-789.mp3" 
+                type="audio/mpeg" />
+    </audio>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K8fKPLV_83g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.3185793344664!2d-6.009243585396246!3d37.3822975424169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c6ae9a171a1%3A0xfb6bb621dc08a753!2sIES%20Triana!5e0!3m2!1ses!2ses!4v1637065828299!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <h1>INSERTAR</h1>
+    <iframe frameborder="0" 
+            src="datos.html" 
+            style="width: 300px;height: 300px;">
+    </iframe>
+
+    <object data="datos.html"
+            type="text/html"
+            style="width: 300px;height: 300px;">
+    </object>
+</body>
+</html>
