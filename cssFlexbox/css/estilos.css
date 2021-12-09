@@ -1,0 +1,31 @@
+.contenedor {
+    display: flex;
+
+    /*flex-direction: column;
+    flex-wrap: wrap-reverse;
+    flex-flow: row-reverse wrap-reverse;*/
+
+    /*flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;*/
+
+    /*height: 240px;
+    border: 1px solid black;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;*/
+}
+
+.elemento {
+    width: 20%;
+    background: linear-gradient(to right, blue, gray);
+    border: 1px solid black;
+    height: 40px;
+    color: white;
+    flex: 1 1 0;
+}
+
+.elemento:nth-child(even) {
+    flex-grow: 2;
+}
