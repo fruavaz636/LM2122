@@ -99,4 +99,42 @@ div {
   height: 40px;
 }
 
+/* line 90, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.micapa {
+  width: 31.25%;
+}
+
+/* line 94, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.display, .display-success {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #51527F;
+}
+
+/* line 99, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.display-success {
+  background: red;
+}
+
+/* line 104, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+ul {
+  list-style-type: none;
+  margin-top: 2em;
+}
+
+/* line 108, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+ul li {
+  background-color: blue;
+}
+
+/* line 111, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+ul li:hover {
+  background-color: red;
+}
+
+/* line 115, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+ul li a {
+  color: white;
+}
+
 /*# sourceMappingURL=estilos.css.map */

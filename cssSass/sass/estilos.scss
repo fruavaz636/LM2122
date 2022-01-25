@@ -82,3 +82,38 @@ div {
 .cubo {
     @include size(50px, 40px);
 }
+
+@function calcularPorcentaje($target-size, $parent-size) {
+    @return $target-size / $parent-size * 100%;
+}
+
+.micapa {
+    width: calcularPorcentaje(300px, 960px);
+}
+
+.display {
+    @include size(5em, 5em);
+    border: 5px solid $secondary-color;
+}
+
+.display-success {
+    @extend .display;
+    background: red;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 2em;
+
+    li {
+        background-color: blue;
+
+        &:hover {
+            background-color: red;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}
