@@ -8,12 +8,11 @@
     <script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <body>
-    <div style="padding: 10px;border: 1px solid black;">
-        <h3>Tablas de Multiplicar</h3>
-        <span id="tablas" style="color: blue;"></span>
-    </div>
     <div style="padding: 10px;border: 1px solid black">
-        <p>Solicita al usuario un número y muestra la tabla de multiplicar de ese número</p>
+        <p>Debes comprobar si el número introducido por el usuario es primo. 
+            Un número es primo si solo es divisible por el mismo y por la unidad. 
+            Para ello puedes hacer un bucle que recorra desde el número menos uno 
+            hasta 2 comprobando que no es divisible por ninguno de ellos</p>
         <table>
             <tr>
                 <td>
@@ -26,7 +25,7 @@
             <tr>
                 <td></td>
                 <td>
-                    <input type="button" value="Mostrar Tabla" onclick="mostrar(document.getElementById('numero').value)">
+                    <input type="button" value="Comprobar" onclick="comprobar(document.getElementById('numero').value)">
                 </td>
             </tr>
         </table>

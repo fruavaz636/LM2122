@@ -1,24 +1,19 @@
-function mostrar(num) {
-    var texto = "<h3>Tabla del " + num + "</h3>";
-
-    for (let i = 1; i <= 10; i++) {
-        texto = texto + num + " * " + i + " = " + (num*i) + "<br/>";
+function comprobar(num) {
+    if (esprimo(num)) {
+        document.getElementById("res").innerHTML = num + " es primo";
+    } else {
+        document.getElementById("res").innerHTML = num + " no es primo";
     }
-
-    document.getElementById("res").innerHTML = texto;
 }
 
-function mostrarTodas() {
-    var textoT = "";
+function esprimo(num) {
+    var es = true;
 
-    for (let i = 1; i <= 10; i++) {
-        textoT = textoT + "<h3>Tabla del " + i + "</h3>";
-        for (let j = 1; j <= 10; j++) {
-            textoT = textoT + i + " * " + j + " = " + (i*j) + "<br/>";
+    for (let i = 2; i < num; i++) {
+        if (num%i==0) {
+            es = false;
         }        
     }
-    
-    document.getElementById("tablas").innerHTML = textoT;
-}
 
-window.addEventListener("load", mostrarTodas, false);
+    return es;
+}
