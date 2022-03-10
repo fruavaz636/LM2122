@@ -1,0 +1,119 @@
+/*
+Aparece en el css
+*/
+
+// El comentario de una línea. No aparece en el css
+
+$primary-color: #C0C0C0;
+$secondary-color: #51527F;
+$body-font: 'Roboto', sans-serif;
+
+body {
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: $body-font;
+}
+
+@for $c from 1 through 4 {
+    .clase-#{$c} {
+        color: rgb($c*255/3, $c*255/3, $c*255/3);
+    }
+}
+
+$debug: false !default;
+
+@mixin debugmode {
+    @if $debug {
+        display: inline-block;
+    }
+    @else {
+        display: none;
+    }
+}
+
+.info {
+    @include debugmode;
+}
+
+$columns: 4;
+$column-width: 80px;
+
+@while $columns > 0 {
+    .col-#{$columns} {
+        width: $column-width;
+        left: $column-width * ($columns - 1);
+    }
+
+    $columns: $columns - 1;
+}
+
+$social-links: facebook twitter linkedin reddit;
+
+.social-links {
+    @each $sl in $social-links {
+        .icon-#{$sl} {
+            background-image: url("images/#{$sl}.png");
+        }
+    }
+}
+
+@mixin centrado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+div {
+    @include centrado;
+    background-color: $primary-color;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.rectangulo {
+    @include size(100px, 80px);
+}
+
+.cubo {
+    @include size(50px, 40px);
+}
+
+@function calcularPorcentaje($target-size, $parent-size) {
+    @return $target-size / $parent-size * 100%;
+}
+
+.micapa {
+    width: calcularPorcentaje(300px, 960px);
+}
+
+.display {
+    @include size(5em, 5em);
+    border: 5px solid $secondary-color;
+}
+
+.display-success {
+    @extend .display;
+    background: red;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 2em;
+
+    li {
+        background-color: blue;
+
+        &:hover {
+            background-color: red;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}

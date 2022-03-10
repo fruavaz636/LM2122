@@ -1,0 +1,103 @@
+a,p {
+    font-size: 18px;
+}
+
+div a {
+    color: crimson;
+}
+
+div#capa1 {
+    background: blue;
+}
+
+/* comentario */
+.letraGrande {
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nosubrayado {
+    text-decoration: none;
+}
+
+div#capa1 a.encima {
+    font-weight: bold;
+}
+
+.encima {
+    font-style: italic;
+}
+
+div#capa1 a.encima:hover {
+    font-size: xx-large;
+}
+
+p#miparrafo::first-line {
+    font-weight: bold;
+}
+
+p#miparrafo::first-letter {
+    font-size: 60px;
+    color: blue;
+    font-family: monospace;
+}
+
+div#capa1 * {
+    background: yellow;
+}
+
+div > a {
+    border: 3px solid red;
+}
+
+a[href^="http"] {
+    padding: 20px;
+}
+
+a[href$="es"] {
+    text-transform: uppercase;
+}
+
+a[href*="triana"] {
+    background: violet;
+}
+
+div + p {
+    font-size: 80px;
+}
+
+ul#lista li:first-child {
+    background: slateblue;
+}
+
+ul#lista li:last-child {
+    background: springgreen;
+}
+
+a#ultimo:hover {
+    font-size: xx-large;
+}
+
+a#ultimo:link {
+    font-size: medium;
+}
+
+a#ultimo:visited {
+    font-size: 2px;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+input:enabled {
+
+}
+
+input:disabled {
+
+}
+
+input:checked {
+    
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJER 08</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <div style="padding: 10px;border: 1px solid black;">
+        <h3>Tablas de Multiplicar</h3>
+        <span id="tablas" style="color: blue;"></span>
+    </div>
+    <div style="padding: 10px;border: 1px solid black">
+        <p>Solicita al usuario un número y muestra la tabla de multiplicar de ese número</p>
+        <table>
+            <tr>
+                <td>
+                    <label for="numero">Número</label>
+                </td>
+                <td>
+                    <input type="number" name="numero" id="numero" autofocus>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Mostrar Tabla" onclick="mostrar(document.getElementById('numero').value)">
+                </td>
+            </tr>
+        </table>
+        
+        <span id="res" style="color: blue;"></span>
+    </div>
+</body>
+</html>

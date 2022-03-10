@@ -1,0 +1,140 @@
+/*
+Aparece en el css
+*/
+/* line 11, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+body {
+  background-color: #C0C0C0;
+  color: #51527F;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 18, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.clase-1 {
+  color: #555555;
+}
+
+/* line 18, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.clase-2 {
+  color: #aaaaaa;
+}
+
+/* line 18, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.clase-3 {
+  color: white;
+}
+
+/* line 18, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.clase-4 {
+  color: white;
+}
+
+/* line 34, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.info {
+  display: none;
+}
+
+/* line 42, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.col-4 {
+  width: 80px;
+  left: 240px;
+}
+
+/* line 42, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.col-3 {
+  width: 80px;
+  left: 160px;
+}
+
+/* line 42, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.col-2 {
+  width: 80px;
+  left: 80px;
+}
+
+/* line 42, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.col-1 {
+  width: 80px;
+  left: 0px;
+}
+
+/* line 54, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.social-links .icon-facebook {
+  background-image: url("images/facebook.png");
+}
+
+/* line 54, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.social-links .icon-twitter {
+  background-image: url("images/twitter.png");
+}
+
+/* line 54, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.social-links .icon-linkedin {
+  background-image: url("images/linkedin.png");
+}
+
+/* line 54, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.social-links .icon-reddit {
+  background-image: url("images/reddit.png");
+}
+
+/* line 68, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: #C0C0C0;
+}
+
+/* line 78, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.rectangulo {
+  width: 100px;
+  height: 80px;
+}
+
+/* line 82, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.cubo {
+  width: 50px;
+  height: 40px;
+}
+
+/* line 90, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.micapa {
+  width: 31.25%;
+}
+
+/* line 94, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.display, .display-success {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #51527F;
+}
+
+/* line 99, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+.display-success {
+  background: red;
+}
+
+/* line 104, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+ul {
+  list-style-type: none;
+  margin-top: 2em;
+}
+
+/* line 108, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+ul li {
+  background-color: blue;
+}
+
+/* line 111, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+ul li:hover {
+  background-color: red;
+}
+
+/* line 115, ../../../REPOSITORIO/LM2122/cssSass/sass/estilos.scss */
+ul li a {
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */

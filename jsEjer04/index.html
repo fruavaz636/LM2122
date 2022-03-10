@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJER 04</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="num1">Nº 1</label>
+            </td>
+            <td>
+                <input type="number" name="num1" id="num1" autofocus>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="num2">Nº 2</label>
+            </td>
+            <td>
+                <input type="number" name="num2" id="num2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="num3">Nº 3</label>
+            </td>
+            <td>
+                <input type="number" name="num3" id="num3">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Comprobar" onclick="comprobar()">
+            </td>
+        </tr>
+    </table>
+    
+    <span id="res" style="color: blue;"></span>
+    
+    <table>
+        <tr>
+            <td>
+                <label for="frase">Frase</label>
+            </td>
+            <td>
+                <input type="text" name="frase" id="frase">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="num">Nº de Repeticiones</label>
+            </td>
+            <td>
+                <input type="number" name="num" id="num">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Mostrar" onclick="repetir()">
+            </td>
+        </tr>
+    </table>
+
+    <span id="res2" style="color: blue;"></span>
+</body>
+</html>

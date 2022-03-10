@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+    <div style="width: 50%; float: left;">
+        <form action="funciones.php" method="get" name="formu" 
+                onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" 
+                    placeholder="Nombre" autofocus onblur="validar(this)">
+            <br/>
+            <span id="spnombre" style="color: red;"></span>
+            <br/>
+
+            <label for="postal">Cód. Postal</label>
+            <input type="number" name="postal" id="postal" size="5">
+            <br/>
+            
+            <label for="edad">Edad</label>
+            <input type="range" name="edad" id="edad" min="1" max="100" onchange="mostrarEdad(this)">
+            <span id="spedad"></span>
+            <br/>
+            
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono">
+
+            <br/>
+            <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+    <div id="capaerrores" style="width: 50%; float: left;color: red;visibility: hidden;">
+        <h3>Errores</h3>
+        <span id="sperrores"></span>
+    </div>
+</body>
+</html>
