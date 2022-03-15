@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJER 11</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+    <div>
+        <h3>TABLAS</h3>        
+    </div>
+    <div>        
+        <table id="tabla">
+            <tr>
+                <td>
+                    <label for="numero">Nº</label>
+                </td>
+                <td>
+                    <input type="text" id="numero" name="numero" autofocus/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    <input type="button" value="AÑADIR" onclick="anadir(parseInt(document.getElementById('numero').value))"/>
+                    <input type="button" value="FIN" onclick="final()"/>
+                </td>
+            </tr>
+        </table>
+        <span id="resultado" class="info"></span>
+    </div>
+</body>
+</html>
