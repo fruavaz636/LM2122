@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJER 12</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+    <div>
+        <h3>TABLAS</h3>        
+    </div>
+    <div>       
+        <form action="" onsubmit="return validar()">
+            <table id="tabla">
+                <tr>
+                    <td>
+                        <label for="correo">Email</label>
+                    </td>
+                    <td>
+                        <input type="text" id="correo" name="correo" autofocus/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="web">Web</label>
+                    </td>
+                    <td>
+                        <input type="text" id="web" name="web"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="edad">Edad</label>
+                    </td>
+                    <td>
+                        <input type="number" id="edad" name="edad"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pass" name="pass"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="repass">Repetir Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="repass" name="repass"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>                        
+                        <input type="submit" value="ENVIAR"/>
+                    </td>
+                </tr>
+            </table>
+        </form> 
+        <br/>
+        <span id="resultado" class="info"></span>
+    </div>
+</body>
+</html>
