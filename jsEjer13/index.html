@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJER 13</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+    <div>       
+        <table id="tabla">
+            <tr>
+                <td>
+                    <label for="nombre">Nombre</label>
+                </td>
+                <td>
+                    <input type="text" id="nombre" name="nombre" autofocus/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="precio">Precio</label>
+                </td>
+                <td>
+                    <input type="number" id="precio" name="precio"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tipo">tipo</label>
+                </td>
+                <td>
+                    <select id="tipo" name="tipo">
+                        <option value="8">8%</option>
+                        <option value="12">12%</option>
+                        <option value="16">16%</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+                <td>                        
+                    <input type="button" value="CALCULAR" onclick="calcular()"/>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <span id="resultado" class="info"></span>
+    </div>
+</body>
+</html>
