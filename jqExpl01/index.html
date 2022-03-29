@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+           $("div").mouseover(function() {
+                $(this).addClass("colorfondo");
+                if ($(this).hasClass("clase")) {
+                    $(this).addClass("color");
+                }
+           });
+
+           $("div").mouseout(function () {
+               $(this).removeClass("colorfondo");
+               if ($(this).hasClass("clase")) {
+                   $(this).removeClass("color");
+               }
+           })
+
+           $("button.unBoton").click(function () {
+               $("div").toggleClass("ocultarmostrar");
+           });
+
+           $("button.otroBoton").click(function () {
+               var estilo = $("span").attr("style");
+               $("div#estiloSpan").text(estilo);
+           });
+
+           $("button#esteBoton").click(function () {
+               $("div#estiloSpan").css("width", "300px");
+           });
+
+           $("button#mostrar").click(function () {
+               var seleccionado = $("input:radio:checked").val();
+               $("span#resultado").text(seleccionado);
+               $("#resultado2").val(seleccionado);
+               return false;
+           });
+
+           $("button#activar").click(function () {
+              $("#resultado3").prop("disabled", false);
+              $("#resultado3").prop("placeholder", "habilitado");
+              return false;
+           });
+
+           $("button#desmarcar").click(function () {
+              $("#chequeo").prop("checked", false);
+              return false;
+           });
+        });
+    </script>
+    
+    <style type="text/css">
+        div {
+            width: 150px;
+            height: 35px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .colorfondo {
+            background-color: blue;
+            border: 1px solid black;
+        }
+        .color {
+            color: red;
+        }
+        .ocultarmostrar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="unBoton">Mostrar / Ocultar</button>
+    <button class="otroBoton">Ver Estilo</button>
+    <button id="esteBoton">Añadir Estilo</button>
+    
+    <br/>
+    
+    <div>Capa 1</div>
+    <div class="clase">Capa 2</div>
+    <div>Capa 3</div>
+
+    <br/>
+
+    <span style="font-style: italic;">SPAN</span>
+    <br/>
+    <div id="estiloSpan"></div>
+
+    <br/>
+
+    <form>
+        <input type="radio" name="rad" value="Opción 1"/>Opción 1<br/>
+        <input type="radio" name="rad" value="Opción 2"/>Opción 2<br/>
+        <input type="radio" name="rad" value="Opción 3"/>Opción 3<br/>
+        <input type="radio" name="rad" value="Opción 4"/>Opción 4<br/>
+        <button id="mostrar">Mostrar</button>
+        <span id="resultado"></span><input type="text" id="resultado2"/>
+        <button id="activar">Activar</button>
+        <input type="text" placeholder="Texto" disabled="disabled" id="resultado3"/>
+        <br/>
+        <input type="checkbox" id="chequeo" value="Sí" checked>Sí<br/>
+        <button id="desmarcar">Desmarcar</button>
+    </form>
+</body>
+</html>
