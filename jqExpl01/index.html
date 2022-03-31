@@ -53,6 +53,11 @@
               $("#chequeo").prop("checked", false);
               return false;
            });
+
+           $("input#insertar").click(function () {
+               $("#capa1").html("<p style='font-weight: bold'>TEXTO</p>");
+               $("#capa2").text("TEXTO");
+           });
         });
     </script>
     
@@ -107,5 +112,11 @@
         <input type="checkbox" id="chequeo" value="Sí" checked>Sí<br/>
         <button id="desmarcar">Desmarcar</button>
     </form>
+
+    <input type="button" value="Insertar" id="insertar"/>
+    <br/>
+    <div id="capa1"></div>
+    <br/>
+    <div id="capa2"></div>
 </body>
 </html>
