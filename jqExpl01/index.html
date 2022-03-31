@@ -55,8 +55,21 @@
            });
 
            $("input#insertar").click(function () {
-               $("#capa1").html("<p style='font-weight: bold'>TEXTO</p>");
+               //$("#capa1").html("<p style='font-weight: bold'>TEXTO</p>");
+               $("#capa1").prepend("<p>Al Inicio</p>")
+               $("#capa1").append("<p>Al final</p>");
+               $("#capa1").before("<div>Antes</div>");
+               $("#capa1").after("<div>Después</div>");
                $("#capa2").text("TEXTO");
+               $("#capa2").replaceWith("OTRO TEXTO");
+           });
+
+           $("#checkMail").click(function () {
+               if ($(this).is(":checked")) {
+                   $("#capaMail").append("<input type='email' id='myemail'/>");
+               } else {
+                    $("#myemail").remove();
+               }
            });
         });
     </script>
@@ -118,5 +131,12 @@
     <div id="capa1"></div>
     <br/>
     <div id="capa2"></div>
+    <br/>
+
+    <div id="capaMail">
+        <input type="checkbox" id="checkMail">¿Email?
+    </div>
+
+
 </body>
 </html>
