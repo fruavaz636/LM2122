@@ -40,4 +40,20 @@ $(document).ready(function () {
         $("#tabla2 tr").css("border-width", numBorde);
         $("#tabla2 td").css("border-width", numBorde);
     });
+
+    $(".btn").on("click", function () {
+        switch ($(this).attr("id")) {
+            case "btnAnadir":
+                $("#tabla3").css("border","1px solid black");
+                break;
+            case "btnRecupera":
+                alert($("#tabla3").css("border"));
+                break;
+            case "btnElimina":
+                $("#tabla3").css("border","");
+                break;
+            default:
+                break;
+        }
+    });
 });

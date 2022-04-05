@@ -1,0 +1,11 @@
+<IfModule alias_module>
+  Alias /curso "/home/usuario/REPOSITORIO/LM2122/PHP"
+
+  <Directory "/home/usuario/REPOSITORIO/LM2122/PHP">
+    Options Indexes FollowSymLinks Includes ExecCGI
+    AllowOverride all
+    Order allow,deny
+    Allow from all
+    Require all granted
+  </Directory>
+</IfModule>
