@@ -7,10 +7,8 @@
     <title>INFO</title>
 </head>
 <body>
-    INFO
   <?php
   phpinfo();
-  //echo "HOLA";
   ?>  
 </body>
 </html>
