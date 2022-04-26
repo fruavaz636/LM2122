@@ -7,11 +7,36 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form action="resultado.php">
+    <form action="resultado.php" enctype="multipart/form-data" method="post">
         <p><label for="nombre">Nombre</label></p>
         <p><input type="text" name="nombre" id="nombre" autofocus></p>
-        <p><label for="apellidos">Apellidos</label></p>
-        <p><input type="text" name="apellidos" id="apellidos"></p>
+        
+        <p><label for="pass">Password</label></p>
+        <p><input type="password" name="pass" id="pass"></p>
+
+        <p><label for="desc">Descripción</label></p>
+        <p><textarea name="desc" id="desc">ESTA ES LA DESC</textarea></p>
+
+        <p><label for="opc">Opción</label></p>
+        <p><input type="checkbox" name="opc" id="opc" value="123"></p>
+
+        <p><label for="dato">Datos</label></p>
+        <p><input type="radio" name="dato" id="dato" value="1" checked>Dato 1
+            <input type="radio" name="dato" id="dato" value="2">Dato 2
+        </p>
+
+        <p>
+            <select name="selec[]" id="selec" multiple>
+                <option value="1">Uno</option>
+                <option value="2">Dos</option>
+                <option value="3">Tres</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="file" name="fichero" id="fichero">
+        </p>
+
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
