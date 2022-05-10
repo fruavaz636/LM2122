@@ -15,19 +15,21 @@
             $conexion = mysqli_connect("localhost", "root", "Usuario?1234", "cursophp") 
                             or die("Problemas de conexión");
             
-            $sql = "SELECT idAlumno, nombre, mail, codigocurso FROM alumnos";
+            $sql = "SELECT a.idAlumno, a.nombre, a.mail, c.nombreCurso 
+                    FROM alumnos a inner join cursos c on a.codigocurso = c.idCurso";
 
             $registros = mysqli_query($conexion, $sql) 
                             or die("Problema en la consulta: " . mysqli_error($conexion));
             
             echo "<table class='table table-striped'>";
-            echo "<thead><th>IdAlumno</th><th>Nombre></th><th>Mail</th></thead>";                        
+            echo "<thead><th>IdAlumno</th><th>Nombre></th><th>Mail</th><th>Curso</th></thead>";                        
             while ($reg=mysqli_fetch_array($registros)) {
                 echo "<tr>";
                 
                 echo "<td>" . $reg['idAlumno'] . "</td>";
                 echo "<td>" . $reg['nombre'] . "</td>";
                 echo "<td>" . $reg['mail'] . "</td>";
+                echo "<td>" . $reg['nombreCurso'] . "</td>";
 
                 
                 echo "</tr>";
