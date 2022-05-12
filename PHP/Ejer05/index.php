@@ -22,7 +22,7 @@
                             or die("Problema en la consulta: " . mysqli_error($conexion));
             
             echo "<table class='table table-striped'>";
-            echo "<thead><th>IdAlumno</th><th>Nombre></th><th>Mail</th><th>Curso</th></thead>";                        
+            echo "<thead><th>IdAlumno</th><th>Nombre></th><th>Mail</th><th>Curso</th><th></th></thead>";                        
             while ($reg=mysqli_fetch_array($registros)) {
                 echo "<tr>";
                 
@@ -30,6 +30,7 @@
                 echo "<td>" . $reg['nombre'] . "</td>";
                 echo "<td>" . $reg['mail'] . "</td>";
                 echo "<td>" . $reg['nombreCurso'] . "</td>";
+                echo "<td>" . "<a href='borrar.php?idAlumno=$reg[idAlumno]' class='btn btn-danger btn-sm'>Borrar</a>" . "</td>";
 
                 
                 echo "</tr>";
