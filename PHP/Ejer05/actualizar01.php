@@ -13,11 +13,14 @@
         <?php
 
             $idAlumno = trim(htmlspecialchars($_REQUEST["idAlumno"], ENT_QUOTES, "UTF-8"));
+            $nombre = trim(htmlspecialchars($_REQUEST["nombre"], ENT_QUOTES, "UTF-8"));
+            $email = trim(htmlspecialchars($_REQUEST["email"], ENT_QUOTES, "UTF-8"));
+            $curso = trim(htmlspecialchars($_REQUEST["curso"], ENT_QUOTES, "UTF-8"));
             
             $conexion = mysqli_connect("localhost", "root", "Usuario?1234", "cursophp") 
                             or die("Problemas de Conexión");
             
-            $sql = "DELETE FROM alumnos WHERE idAlumno = $idAlumno";
+            $sql = "UPDATE alumnos SET nombre='$nombre', mail='$email', codigocurso=$curso WHERE idAlumno = $idAlumno";
 
             mysqli_query($conexion, $sql) 
                         or die("Problemas en el delete: ".mysqli_error($conexion));

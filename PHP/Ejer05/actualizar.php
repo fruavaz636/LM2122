@@ -61,7 +61,7 @@
                         </select>
                     </div>
 
-                    <input type="submit" value="Insertar" class="btn btn-primary btn-block">
+                    <input type="submit" value="Actualizar" class="btn btn-primary btn-block">
                 </form>
             <?php
             }
